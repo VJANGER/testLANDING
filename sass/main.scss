@@ -1,24 +1,57 @@
-article{
-    width: 400px;
-    height: 500px;
+*{
+    margin: 0px 0px;
+    box-sizing: border-box;
+}
+.baseNav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 700px;
+    background-image: url(../img/377269-alexfas01.jpg);
+    background-position: center center;
+    background-size: cover;
+    & nav{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    border-radius: 8px;
-    border: 1px solid #000;
-    :nth-child(1){
-        border: 1px solid #000;
-        width: 200px;
-        height: 100px;
-        background-color: aqua;
+        & a{
+            font-family: 'Lato', sans-serif;
+            font-size: 100px;
+            font-weight: 700;
+            text-decoration: none;
+            text-shadow: 5px 7px 0px #a7673f;
+            color: rgb(138, 134, 134);
+        }
     }
-    :nth-child(2){
-        @extend :nth-child(1);
-        background-color: chartreuse;
+}
+.portfolio{
+    height: 700px;
+    background-color: #000;
+    h2{
+        font-size: 50px;
+        font-weight: 300;
+        padding: 20px 20px;
+        color: rgb(138, 134, 134);
     }
-    :nth-child(3){
-        @extend :nth-child(1);
-        background-color: coral;
+}
+.shop{
+    height: 700px;
+    background-color: #000;
+    h2{
+        font-size: 50px;
+        font-weight: 300;
+        padding: 30px 50px;
+        color: rgb(138, 134, 134);
+    }
+}
+.about{
+    height: 700px;
+    background-color: #000;
+    h2{
+        font-size: 50px;
+        font-weight: 300;
+        padding: 30px 50px;
+        color: rgb(138, 134, 134);
     }
 }
